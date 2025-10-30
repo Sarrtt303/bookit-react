@@ -1,7 +1,8 @@
 # Bookit Development 
 Deplaoy Link:  ...
-🎯 Project Overview
-StayFinder is a full-stack property rental platform similar to Airbnb, focusing on both short-term and long-term stays.
+
+
+# 🎯 Project Overview
 
 # 🛠️  Tech Stack
 ## Frontend:

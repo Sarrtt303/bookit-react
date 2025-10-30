@@ -53,13 +53,13 @@ const BookingResult = () => {
 
             {/* Booking ID */}
             <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6 mb-8">
-              <p className="text-sm font-medium text-blue-800 mb-2">Booking Reference</p>
+              <p className="text-sm font-medium text-black mb-2">Booking Reference</p>
               {result.bookingId ? (
                 <>
-                  <p className="text-3xl font-bold text-blue-900 tracking-wider">
+                  <p className="text-3xl font-bold text-black tracking-wider">
                     {result.bookingId}
                   </p>
-                  <p className="text-sm text-blue-700 mt-2">
+                  <p className="text-sm text-black mt-2">
                     Save this reference number for your records
                   </p>
                 </>
@@ -76,7 +76,7 @@ const BookingResult = () => {
               <h2 className="text-xl font-semibold text-gray-900 mb-4">Booking Details</h2>
 
               <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-                <Calendar className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
+                <Calendar className="w-6 h-6 text-black mt-1 " />
                 <div>
                   <p className="text-sm font-medium text-gray-500">Experience</p>
                   <p className="text-lg font-semibold text-gray-900">{result.experience}</p>
@@ -84,7 +84,7 @@ const BookingResult = () => {
               </div>
 
               <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-                <Calendar className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
+                <Calendar className="w-6 h-6 text-black mt-1 " />
                 <div>
                   <p className="text-sm font-medium text-gray-500">Date</p>
                   <p className="text-lg text-gray-900">{formatDate(result.date)}</p>
@@ -92,7 +92,7 @@ const BookingResult = () => {
               </div>
 
               <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-                <Clock className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
+                <Clock className="w-6 h-6 text-black mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-sm font-medium text-gray-500">Time</p>
                   <p className="text-lg text-gray-900">{result.time}</p>
@@ -100,7 +100,7 @@ const BookingResult = () => {
               </div>
 
               <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-                <Users className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
+                <Users className="w-6 h-6 text-black mt-1 " />
                 <div>
                   <p className="text-sm font-medium text-gray-500">Guests</p>
                   <p className="text-lg text-gray-900">{result.quantity} guest{result.quantity && result.quantity > 1 ? 's' : ''}</p>
@@ -108,7 +108,7 @@ const BookingResult = () => {
               </div>
 
               <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-                <DollarSign className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
+                <DollarSign className="w-6 h-6 text-black mt-1 " />
                 <div>
                   <p className="text-sm font-medium text-gray-500">Total Paid</p>
                   <p className="text-lg font-semibold text-gray-900">${result.total}</p>
@@ -127,7 +127,7 @@ const BookingResult = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => navigate('/')}
-                className="flex-1 py-3 px-6 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all shadow-md hover:shadow-lg"
+                className="flex-1 py-3 px-6 bg-yellow-600 hover:bg-yellow-700 text-white font-semibold rounded-lg transition-all shadow-md hover:shadow-lg"
               >
                 Book Another Experience
               </button>
