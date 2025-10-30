@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Sunset Yoga by the Beach",
+    "shortDescription": "Relax your mind and body during this peaceful sunset yoga session.",
+    "fullDescription": "Experience a 90-minute rejuvenating yoga class with ocean views and calming music. Perfect for beginners and advanced practitioners alike.",
+    "coverPhoto": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
+    "pricePerPerson": 45,
+    "timeLength": "90 mins",
+    "type": "Wellness",
+    "averageRating": 4.8,
+    "isPublished": true,
+    "publicationStatus": "published"
+  },
+  {
+    "title": "Mountain Trail Hike",
+    "shortDescription": "Guided 5-hour hike through scenic mountain paths.",
+    "fullDescription": "Join our experienced guides on a breathtaking journey through lush trails and mountain peaks. Includes snacks, water, and first-aid support.",
+    "coverPhoto": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&h=600&fit=crop",
+    "pricePerPerson": 60,
+    "timeLength": "5 hrs",
+    "type": "Adventure",
+    "averageRating": 4.7,
+    "isPublished": true,
+    "publicationStatus": "published"
+  },
+  {
+    "title": "Cultural City Walking Tour",
+    "shortDescription": "Discover local history and hidden gems with an expert guide.",
+    "fullDescription": "Explore historical sites, local markets, and cultural landmarks in this 3-hour immersive walking tour. Great for newcomers and travelers!",
+    "coverPhoto": "https://images.unsplash.com/photo-1559589689-577aabd1b82e?w=800&h=600&fit=crop",
+    "pricePerPerson": 30,
+    "timeLength": "3 hrs",
+    "type": "Cultural",
+    "averageRating": 4.5,
+    "isPublished": true,
+    "publicationStatus": "published"
+  },
+  {
+    "title": "Gourmet Cooking Workshop",
+    "shortDescription": "Hands-on culinary class with a local chef.",
+    "fullDescription": "Learn to cook authentic dishes using fresh local ingredients. Includes all materials and a full meal at the end.",
+    "coverPhoto": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&h=600&fit=crop",
+    "pricePerPerson": 75,
+    "timeLength": "2.5 hrs",
+    "type": "Food & Drink",
+    "averageRating": 4.9,
+    "isPublished": true,
+    "publicationStatus": "published"
+  },
+  {
+    "title": "Kayaking Through Mangroves",
+    "shortDescription": "Paddle through scenic mangrove forests with a naturalist guide.",
+    "fullDescription": "Enjoy this eco-friendly adventure exploring coastal mangroves, spotting exotic birds and marine life along the way.",
+    "coverPhoto": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
+    "pricePerPerson": 55,
+    "timeLength": "2 hrs",
+    "type": "Adventure",
+    "averageRating": 4.6,
+    "isPublished": true,
+    "publicationStatus": "published"
+  },
+  {
+    "title": "Local Wine Tasting Evening",
+    "shortDescription": "Taste the region’s best wines in a cozy vineyard setting.",
+    "fullDescription": "Sample 6 wines paired with artisanal cheeses while learning about the winemaking process from local vintners.",
+    "coverPhoto": "https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?w=800&h=600&fit=crop",
+    "pricePerPerson": 50,
+    "timeLength": "2 hrs",
+    "type": "Food & Drink",
+    "averageRating": 4.9,
+    "isPublished": true,
+    "publicationStatus": "published"
+  },
+  {
+    "title": "Artisan Pottery Workshop",
+    "shortDescription": "Create your own pottery with local artisans.",
+    "fullDescription": "Get hands-on experience shaping and painting clay in this relaxing creative workshop. Includes materials and take-home piece.",
+    "coverPhoto": "https://images.unsplash.com/photo-1601042879364-fbc6b3a10c09?w=800&h=600&fit=crop",
+    "pricePerPerson": 35,
+    "timeLength": "2 hrs",
+    "type": "Art & Culture",
+    "averageRating": 4.7,
+    "isPublished": true,
+    "publicationStatus": "published"
+  },
+  {
+    "title": "Night Safari Adventure",
+    "shortDescription": "Explore the wilderness under the stars with expert trackers.",
+    "fullDescription": "An unforgettable wildlife experience featuring guided night treks, spotlighting nocturnal animals, and campfire refreshments.",
+    "coverPhoto": "https://images.unsplash.com/photo-1523978591478-c753949ff840?w=800&h=600&fit=crop",
+    "pricePerPerson": 90,
+    "timeLength": "4 hrs",
+    "type": "Wildlife",
+    "averageRating": 4.8,
+    "isPublished": true,
+    "publicationStatus": "published"
+  },
+  {
+    "title": "Surfing for Beginners",
+    "shortDescription": "Learn to surf with certified instructors.",
+    "fullDescription": "Master the basics of surfing with a small group, including equipment, safety briefing, and beach training.",
+    "coverPhoto": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop",
+    "pricePerPerson": 70,
+    "timeLength": "2 hrs",
+    "type": "Adventure",
+    "averageRating": 4.9,
+    "isPublished": true,
+    "publicationStatus": "published"
+  },
+  {
+    "title": "Photography Expedition",
+    "shortDescription": "Capture the beauty of nature and architecture with a pro photographer.",
+    "fullDescription": "Guided photography walk covering best local scenic spots. Ideal for all skill levels — bring your own camera!",
+    "coverPhoto": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop",
+    "pricePerPerson": 40,
+    "timeLength": "3 hrs",
+    "type": "Creative",
+    "averageRating": 4.6,
+    "isPublished": true,
+    "publicationStatus": "published"
+  }
+]
