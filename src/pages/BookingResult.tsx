@@ -92,7 +92,7 @@ const BookingResult = () => {
               </div>
 
               <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-                <Clock className="w-6 h-6 text-black mt-1 flex-shrink-0" />
+                <Clock className="w-6 h-6 text-black mt-1 " />
                 <div>
                   <p className="text-sm font-medium text-gray-500">Time</p>
                   <p className="text-lg text-gray-900">{result.time}</p>
@@ -111,7 +111,7 @@ const BookingResult = () => {
                 <DollarSign className="w-6 h-6 text-black mt-1 " />
                 <div>
                   <p className="text-sm font-medium text-gray-500">Total Paid</p>
-                  <p className="text-lg font-semibold text-gray-900">${result.total}</p>
+                  <p className="text-lg font-semibold text-gray-900">₹ {result.total}</p>
                 </div>
               </div>
             </div>

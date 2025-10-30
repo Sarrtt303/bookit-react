@@ -174,7 +174,7 @@ const Home = () => {
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                       />
                       <div className="absolute top-3 right-3 bg-white px-3 py-1 rounded-full text-sm font-semibold text-gray-800">
-                        ${experience.pricePerPerson}
+                        ₹{experience.pricePerPerson}
                       </div>
                     </div>
                     

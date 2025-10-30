@@ -3,6 +3,16 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Calendar, Clock, MapPin, Users } from 'lucide-react';
 // Experience type intentionally not used here to allow flexible backend shape
+interface TimeSlot {
+  slotTime: string;
+}
+
+interface ScheduledDate {
+  scheduledDate: string;
+  timeSlots: TimeSlot[];
+}
+
+
 
 const ExperienceDetails = () => {
   const { id } = useParams<{ id: string }>();
@@ -16,6 +26,7 @@ const ExperienceDetails = () => {
 
   useEffect(() => {
     // TODO: Replace with actual API call
+    console.log(setSelectedDateIso);
     const fetchExperience = async () => {
       try {
         const response = await fetch(`https://bookit-node.onrender.com/api/experiences/${id}`);
@@ -142,62 +153,60 @@ const ExperienceDetails = () => {
             </div>
 
             {/* Available Dates */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                <Calendar className="w-6 h-6" />
-                Available Dates
-              </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {experience.scheduledDates?.map((item, index) => {
-                  const dateObj = new Date(item.scheduledDate);
-                  const dateString = dateObj.toISOString().split('T')[0];
-                  const displayDate = dateObj.toLocaleDateString('en-US', {
-                    month: 'short',
-                    day: 'numeric',
-                    year: 'numeric',
-                  });
+            {/* Available Dates */}
+<div className="bg-white rounded-lg shadow-md p-6">
+  <h2 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+    <Calendar className="w-6 h-6" />
+    Available Dates
+  </h2>
+  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+    {experience.scheduledDates?.map((item: ScheduledDate, index: number) => {
+      const dateObj = new Date(item.scheduledDate);
+      const displayDate = dateObj.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      });
 
-                  return (
-                    <button
-                      key={index}
-                      onClick={() => setSelectedDate(item)} // pass the entire object
-                      className={`p-3 rounded-lg border-2 text-center transition-all ${
-                        selectedDate?.scheduledDate === item.scheduledDate
-                          ? 'border-yellow-800 bg-yellow-600 text-black'
-                          : 'border-gray-200 hover:border-yellow-800'
-                      }`}
-                    >
-                      {displayDate}
-                    </button>
-                  );
-                })}
-              </div>
+      return (
+        <button
+          key={index}
+          onClick={() => setSelectedDate(item)}
+          className={`p-3 rounded-lg border-2 text-center transition-all ${
+            selectedDate?.scheduledDate === item.scheduledDate
+              ? 'border-yellow-800 bg-yellow-600 text-black'
+              : 'border-gray-200 hover:border-yellow-800'
+          }`}
+        >
+          {displayDate}
+        </button>
+      );
+    })}
+  </div>
+</div>
 
-            </div>
-
-            {/* Available Time Slots */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                <Clock className="w-6 h-6" />
-                Available Time Slots
-              </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              {selectedDate?.timeSlots?.map((slot, index) => (
-                <button
-                  key={index}
-                  onClick={() => setSelectedTime(slot.slotTime)}
-                  className={`p-3 rounded-lg border-2 text-center transition-all ${
-                    selectedTime === slot.slotTime
-                      ? 'border-yellow-700 bg-yellow-600 text-black'
-                      : 'border-gray-200 hover:border-yellow-800'
-                  }`}
-                >
-                  {slot.slotTime}
-                </button>
-              ))}
-            </div>
-
-            </div>
+{/* Available Time Slots */}
+<div className="bg-white rounded-lg shadow-md p-6">
+  <h2 className="text-2xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+    <Clock className="w-6 h-6" />
+    Available Time Slots
+  </h2>
+  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+    {selectedDate?.timeSlots?.map((slot: TimeSlot, index: number) => (
+      <button
+        key={index}
+        onClick={() => setSelectedTime(slot.slotTime)}
+        className={`p-3 rounded-lg border-2 text-center transition-all ${
+          selectedTime === slot.slotTime
+            ? 'border-yellow-700 bg-yellow-600 text-black'
+            : 'border-gray-200 hover:border-yellow-800'
+        }`}
+      >
+        {slot.slotTime}
+      </button>
+    ))}
+  </div>
+</div>
 
             {/* About Section */}
             <div className="bg-white rounded-lg shadow-md p-6">

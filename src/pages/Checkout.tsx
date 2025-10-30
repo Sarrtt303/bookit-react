@@ -292,7 +292,7 @@ const Checkout = () => {
                 </div>
 
                 <div className="flex justify-between text-gray-700">
-                  <span>Taxes (10%)</span>
+                  <span>Taxes </span>
                   <span className="font-medium">${taxes.toFixed(2)}</span>
                 </div>
 
@@ -307,7 +307,7 @@ const Checkout = () => {
               <div className="border-t-2 border-gray-300 pt-4 mb-6">
                 <div className="flex justify-between items-center">
                   <span className="text-xl font-semibold text-gray-900">Total</span>
-                  <span className="text-3xl font-bold text-blue-600">${total.toFixed(2)}</span>
+                  <span className="text-3xl font-bold text-black-600">₹ {total.toFixed(2)}</span>
                 </div>
               </div>
 
